@@ -58,20 +58,20 @@ public class Time_Space_Complexity {
 		}
 		for (i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
-				//O(N^2)
+				// O(N^2)
 				System.out.println("hey");
 			}
 		}
 		for (i = 1; i * i <= n; i++) {
-			//O(Sqrt(N))
+			// O(Sqrt(N))
 			System.out.println("hey");
 		}
-		int k=1;
+		int k = 1;
 		for (i = 1; i <= n; i++) {
 			for (int j = 1; j <= i * i; j++) {
-				for ( k = 1; k <= n / 2; k++) {
+				for (k = 1; k <= n / 2; k++) {
 					System.out.println("hey");
-					//O(N^4)
+					// O(N^4)
 				}
 			}
 		}
@@ -79,7 +79,19 @@ public class Time_Space_Complexity {
 			// O(log(N) base 2)
 			System.out.println("hey");
 		}
-
+		for (i = n / 2; i <= n; i++) {
+			for (int j = 1; j <= n / 2; j++) {
+				for (k = 1; k <= n; k = k * 2) {
+					System.out.println("hey");
+					// O(N^2)(Log(N))
+				}
+			}
+		}
+		for (i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j += i) {
+				System.out.println("hey");
+			}
+		}
 
 	}
 
